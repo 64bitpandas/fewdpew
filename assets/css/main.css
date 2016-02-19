@@ -6,6 +6,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Custom Fonts */
+	@font-face {
+			font-family: cornerstone;
+			src: url(../fonts/cornerstone.ttf);
+	}
+	
+	@font-face {
+			font-family: nexa;
+			src: url(../fonts/nexabold.otf);
+	}
+		
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1678,12 +1689,12 @@
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		border-bottom: none;
 	}
 
 		a:hover {
@@ -1970,7 +1981,7 @@
 			-ms-pointer-events: none;
 			pointer-events: none;
 			cursor: default;
-			opacity: 0.25;
+			opacity: 0.5;
 		}
 
 	@media screen and (max-width: 480px) and (orientation: portrait) {
@@ -2036,6 +2047,60 @@
 			.button.special:active {
 				background-color: #3089e2;
 			}
+			
+			
+		input[type="submit"].green,
+		input[type="reset"].green,
+		input[type="button"].green,
+		button.green,
+		.button.green {
+			box-shadow: none;
+			background-color: #4adf35 !important;
+			color: #ffffff !important;
+		}
+		
+			input[type="submit"].green:active,
+			input[type="reset"].green:active,
+			input[type="button"].green:active,
+			button.green:active,
+			.button.green:active {
+				background-color: #228415 !important;
+			}
+			
+			input[type="submit"].green:hover,
+			input[type="reset"].green:hover,
+			input[type="button"].green:hover,
+			button.green:hover,
+			.button.green:hover {
+				background-color: #2db01c !important;
+			}
+			
+		input[type="submit"].orange,
+		input[type="reset"].orange,
+		input[type="button"].orange,
+		button.orange,
+		.button.orange {
+			box-shadow: none;
+			background-color: #ff9933 !important;
+			color: #ffffff !important;
+		}
+		
+			input[type="submit"].orange:active,
+			input[type="reset"].orange:active,
+			input[type="button"].orange:active,
+			button.orange:active,
+			.button.orange:active {
+			background-color: #cc6600 !important;
+			}
+			
+			input[type="submit"].orange:hover,
+			input[type="reset"].orange:hover,
+			input[type="button"].orange:hover,
+			button.orange:hover,
+			.button.orange:hover {
+			background-color: #ff8000 !important;
+			}
+		
 
 /* Form */
 
@@ -2847,8 +2912,9 @@
 	}
 
 	table {
-		margin: 0 0 2em 0;
-		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 85%;
 	}
 
 		table tbody tr {
@@ -2863,10 +2929,10 @@
 		}
 
 		table th {
-			font-size: 0.9em;
+			font-size: 1.75;
 			font-weight: bold;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		table thead {
@@ -2933,7 +2999,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 4.5em 2em 2.5em 2em ;
 		background-color: #ffffff;
 		border-bottom: solid 2px #eeeeee;
 	}
@@ -3163,7 +3229,7 @@
 			.wrapper.style2 button,
 			.wrapper.style2 .button {
 				background-color: transparent;
-				color: #828282 !important;
+				color: #828282;
 				box-shadow: inset 0 0 0 2px #e6e6e6;
 			}
 
@@ -3627,8 +3693,8 @@
 /* Header */
 
 	#header {
-		background-color: #4696e5;
-		color: #d0e4f8;
+		background-color: #4da6ff;
+		color: #ffffff;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3642,7 +3708,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
+		background-image: url("images/overlay.png"),
 		background-position: top left, center center;
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
@@ -3814,9 +3880,7 @@
 		}
 
 		#header a {
-			color: inherit;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
-			color: #ffffff;
+			color: #b3d9ff;
 		}
 
 		#header strong, #header b {
@@ -3841,7 +3905,8 @@
 		}
 
 		#header h1 {
-			font-size: 3.25em;
+			font-family: cornerstone;
+			font-size: 6em !important;
 			font-weight: bold;
 			margin-bottom: 0.5em;
 		}
@@ -4149,3 +4214,44 @@
 		}
 
 	}
+	
+	/* Navbar */
+	#navbar {
+		background-color: #8f51f9;
+		padding: 0.75em;
+		position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+	}
+	
+		#navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			
+			
+		}
+		
+		#navbar li {
+			display: inline;	
+			
+		}
+
+		#navbar li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 0.75em;
+			text-decoration: none;
+			font-family: nexa;
+			font-size: 1.5em;
+		}
+		
+		#navbar li a:hover {
+			background-color: #aa00ff;
+		}
+		
+		#navbar .active {
+			background-color: #4CAF50;
+		}
