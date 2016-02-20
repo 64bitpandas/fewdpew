@@ -11,11 +11,11 @@
 
 @font-face {
   font-family: cornerstone;
-  src: url(../fonts/cornerstone.ttf);
+  src: url(../fonts/cornerstonefont.ttf);
 }
 @font-face {
   font-family: nexa;
-  src: url(../fonts/nexabold.otf), url(../fonts/nexabold.eot), url(../fonts/nexabold.svg), url(../fonts/nexabold.woff);
+  src: url(../fonts/nexa.otf), url(../fonts/nexa.eot), url(../fonts/nexa.svg), url(../fonts/nexa.woff);
 }
 
 /* Reset */
