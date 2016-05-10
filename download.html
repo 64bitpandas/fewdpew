@@ -43,6 +43,8 @@
 					var mac = navigator.platform.match(/(Mac|MacIntel)/i) ? true : false;
 					var windows = navigator.platform.match(/(Win32)/i) ? true : false;
 					var linux = navigator.platform.match(/(Linux)/i) ? true : false;
+					var android = navigator.platform.match(/(Android)/i) ? true : false;
+					var ios = navigator.platform.match(/(iPad|iPhone|iPod)/i) ? true : false;
 					  if (mac) {
     						window.open("https://www.dropbox.com/s/7bo6x534j18dg2l/Bumrush%20Alpha%201.0.0%20%28OS%20X%29.zip?dl=1");
     						console.log("You are using A Mac Computer!");
@@ -55,6 +57,15 @@
 					  	//Add Linux Download Link Here!
 					  	alert("We see you are using a Linux computer! Nice! But unfortunally, we currently don't support Linux Platform. Please check back later! Thanks!");
 					  	console.log("You are using A Linux Computer!");
+					  }
+					  else if (ios) {
+					  	//iOS App Store Page Here
+					  	alert("We see you are using iOS! Nice! But unfortunally, we currently don't support mobile Platform. Please check back later! Thanks!");
+					  	console.log("You are using iOS!");
+					  }
+					  else if(android) {
+					  	alert("We see you are using android! Nice! But unfortunally, we currently don't support mobile Platform. Please check back later! Thanks!");
+					  	console.log("You are using Android!");
 					  }
 					  else {
 					  	//Default to Windows Binary
