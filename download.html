@@ -39,14 +39,27 @@
 			<h1>Downloads</h1>
 			<script>
 				function downloadBinary() {
-					var mac = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i) ? true : false;
+					//This function is made by Eric Q.
+					var mac = navigator.platform.match(/(Mac|MacIntel)/i) ? true : false;
+					var windows = navigator.platform.match(/(Win32)/i) ? true : false;
+					var linux = navigator.platform.match(/(Linux)/i) ? true : false;
 					  if (mac) {
     						window.open("https://www.dropbox.com/sh/d5f0qrznmr5dfmt/AAA_McLswYSgqU230ZJguXvOa/Mac.zip?dl=1");
     						console.log("You are using A Mac Computer!");
 					  }
-					  else {
+					  else if (windows) {
 					  	window.open("https://www.dropbox.com/sh/d5f0qrznmr5dfmt/AADQFxBiESUuOL6gklO8Vduxa/Windows.zip?dl=1");
 					  	console.log("You are using A Windows Computer!");
+					  }
+					  else if (linux) {
+					  	//Add Linux Download Link Here!
+					  	alert("We see you are using a Linux computer! Nice! But unfortunally, we currently don't support Linux Platform. Please check back later! Thanks!");
+					  	console.log("You are using A Linux Computer!");
+					  }
+					  else {
+					  	//Default to Windows Binary
+					  	alert("We cannot seems to detect which operating system you are using. Please go to \"Other Downloads\" to download the correct version! Thanks!");
+					  	console.log("ERROR. Cannot Detect OS Version. Fallback.")
 					  }
 				}
 				
