@@ -2882,7 +2882,7 @@ table.alt tbody tr td {
 }
 @media screen and (max-width: 1280px) {
   #header {
-    background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
+    //background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
   }
 }
 @media screen and (max-width: 980px) {
@@ -2914,7 +2914,7 @@ table.alt tbody tr td {
 }
 @media screen and (max-width: 736px) {
   #header {
-    background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
+    //background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
   }
   #header h1 {
     font-size: 2em;
