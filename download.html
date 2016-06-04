@@ -38,7 +38,7 @@
 			<h1></h1>
 			<h1>Downloads</h1>
 			<script>
-				function downloadBinary() {
+				function downloadBinary(windowsLink, macLink, linuxLink) {
 					//This function is made by Eric Q.
 					var mac = navigator.platform.match(/(Mac|MacIntel)/i) ? true : false;
 					var windows = navigator.platform.match(/(Win32)/i) ? true : false;
@@ -46,38 +46,38 @@
 					var android = navigator.platform.match(/(Android)/i) ? true : false;
 					var ios = navigator.platform.match(/(iPad|iPhone|iPod)/i) ? true : false;
 					  if (mac) {
-    						window.open("https://www.dropbox.com/s/7bo6x534j18dg2l/Bumrush%20Alpha%201.0.0%20%28OS%20X%29.zip?dl=1");
+    						window.open(macLink);
     						console.log("You are using A Mac Computer!");
 					  }
 					  else if (windows) {
-					  	window.open("https://www.dropbox.com/s/otzhv91hwajc555/Bumrush%20Alpha%201.0.0%20%28Windows%29.zip?dl=1");
+					  	window.open(windowsLink);
 					  	console.log("You are using A Windows Computer!");
 					  }
 					  else if (linux) {
 					  	//Add Linux Download Link Here!
-					  	alert("We see you are using a Linux computer! Nice! But unfortunally, we currently don't support Linux Platform. Please check back later! Thanks!");
+					  	window.open(linuxLink);
 					  	console.log("You are using A Linux Computer!");
 					  }
 					  else if (ios) {
 					  	//iOS App Store Page Here
-					  	alert("We see you are using iOS! Nice! But unfortunally, we currently don't support mobile Platform. Please check back later! Thanks!");
+					  	alert("We see you are using iOS! Nice! Unfortunately, we don't yet support mobile platforms. Please check back later! Thanks!");
 					  	console.log("You are using iOS!");
 					  }
 					  else if(android) {
-					  	alert("We see you are using android! Nice! But unfortunally, we currently don't support mobile Platform. Please check back later! Thanks!");
+					  	alert("We see you are using Android! Nice! Unfortunately, we don't yet support mobile platforms. Please check back later! Thanks!");
 					  	console.log("You are using Android!");
 					  }
 					  else {
 					  	//Default to Windows Binary
 					  	alert("We cannot seems to detect which operating system you are using. Please go to \"Other Downloads\" to download the correct version! Thanks!");
-					  	console.log("ERROR. Cannot Detect OS Version. Fallback.")
+					  	console.log("ERROR. Cannot Detect OS Version.")
 					  }
 				}
 				
 			</script>
 			<ul class="actions">
-				<li><a onclick='downloadBinary()' class="button big green icon fa-download">Alpha 1.0.0</a></li>
-				<li><a href="https://github.com/BenCuan/unity-game/archive/v1.0.0-alpha.zip" class="button big orange icon fa-download">Source Code</a></li>
+				<li><a onclick='downloadBinary("https://www.dropbox.com/s/tbg0a4e3h8w98z3/Bumrush%201.1.0%20Alpha%20%28Windows%29.zip?dl=1", "https://www.dropbox.com/s/6hdqz6hgoxi7v61/Bumrush%201.1.0%20Alpha%20%28OS%20X%29.zip?dl=1", "https://www.dropbox.com/s/4x1cyielz0afikj/Bumrush%201.1.0%20Alpha%20%28Linux%29.zip?dl=1")' class="button big green icon fa-download">Alpha 1.1.0</a></li>
+				<li><a href="https://github.com/BenCuan/unity-game/archive/v1.1.0-alpha.zip" class="button big orange icon fa-code">Source Code</a></li>
 				<li><a href="#one" class="button big special icon fa-chevron-down scrolly">Other Downloads</a></li>
 			</ul>
 		</div>
@@ -102,8 +102,14 @@
 				<tbody>
 					<tr>
 						<td>LATEST (May be unstable)</td>
-						<td><a onclick='downloadBinary()' class="button green icon fa-download">Alpha 1.0.0</a></td>
-						<td><a href="https://github.com/FewdpewGames/unity-game/archive/master.zip" class="button orange icon fa-download">Download</a></td>
+						<td><a href="" class="button green icon fa-download disabled">Not Built</a></td>
+						<td><a href="https://github.com/BenCuan/unity-game/archive/develop.zip" class="button orange icon fa-code">Download</a></td>
+					</tr>
+					
+					<tr>
+						<td>Alpha 1.0.0
+						<td><a onclick='downloadBinary("https://www.dropbox.com/s/otzhv91hwajc555/Bumrush%20Alpha%201.0.0%20%28Windows%29.zip?dl=1", "https://www.dropbox.com/s/7bo6x534j18dg2l/Bumrush%20Alpha%201.0.0%20%28OS%20X%29.zip?dl=1", "https://www.dropbox.com/s/4x1cyielz0afikj/Bumrush%201.1.0%20Alpha%20%28Linux%29.zip?dl=1")' class="button green icon fa-download">Download</a></td>
+						<td><a href="https://github.com/BenCuan/unity-game/archive/v1.0.0-alpha.zip" class="button orange icon fa-code">Download</a></td>
 					</tr>
 			
 					<!--
