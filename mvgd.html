@@ -62,8 +62,16 @@
          </a>
       </div>
       
-     <div id="example-vertical">
-    <h3>Keyboard</h3>
+     <script>
+            $("#wizard").steps({
+	    headerTag: "h3",
+	    bodyTag: "section",
+	    transitionEffect: "slideLeft",
+	    stepsOrientation: "vertical"
+	});
+        </script>
+        <div id="wizard"> 
+        <h3>Keyboard</h3>
     <section>
         <p>Try the keyboard navigation by clicking arrow left or right!</p>
     </section>
@@ -75,14 +83,7 @@
     <section>
         <p>The next and previous buttons help you to navigate through your content.</p>
     </section>
-	</div>
-	<script>
-	$("#example-vertical").steps({
-	    headerTag: "h3",
-	    bodyTag: "section",
-	    transitionEffect: "slideLeft",
-	    stepsOrientation: "vertical"
-	});
-	</script>
+</div>
+        
    </body>
 </html>
