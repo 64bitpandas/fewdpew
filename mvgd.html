@@ -64,15 +64,27 @@
       </div>
       
       <script>
-            $("#wizard").steps();
+            $("#wizard").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "slideLeft",
+    stepsOrientation: "vertical"
+});
         </script>
         <div id="wizard">
-	    <h1>First Step</h1>
-	    <div>First Content</div>
-	 
-	    <h1>Second Step</h1>
-	    <div>Second Content</div>
-	</div>
+	      <h3>Keyboard</h3>
+    <section>
+        <p>Try the keyboard navigation by clicking arrow left or right!</p>
+    </section>
+    <h3>Effects</h3>
+    <section>
+        <p>Wonderful transition effects.</p>
+    </section>
+    <h3>Pager</h3>
+    <section>
+        <p>The next and previous buttons help you to navigate through your content.</p>
+    </section>
+</div>
         
    </body>
 </html>
