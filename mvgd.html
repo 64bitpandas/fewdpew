@@ -96,7 +96,14 @@
   <div id="step-1">   
       <h2 class="StepTitle">Step 1 Requirement</h2>
        <!-- step content -->
-       <a class="btn btn-large btn-success" href="javascript:window.open('https://discordapp.com/download','_blank');">
+       <a class="btn btn-large btn-success" href="javascript:void(
+            window.open(
+            'https://discordapp.com/download',
+            'blank',
+            'scrollbars=yes,
+            toolbar=no'
+            )
+            )">
 	  <i class="icon-flag icon-2x pull-left"></i> Download Discord By Clicking Here</a>
   </div>
   <div id="step-2">
@@ -107,12 +114,11 @@
             'https://discord.gg/F2ZcjAb',
             'blank',
             'scrollbars=yes,
-            toolbar=no'
+            toolbar=no,
+            width=500,
+            height=500'
             )
             )">
-        	
-        	
-        	
 	  <i class="icon-flag icon-2x pull-left"></i> Join MVGD channel By Clicking Here!</a>
 	  <p>Please make sure you have properly installed the client(DON'T use the web version), then click the button above.</p>
   </div>                      
